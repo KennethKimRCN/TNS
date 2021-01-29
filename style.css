@@ -2,14 +2,34 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(245, 245, 245);
+    scroll-behavior: smooth;
     font-family: "Helvetica Now Display DW",sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+body{
+    background-color: rgb(245, 245, 245);
 }
 
 nav{
     position: fixed;
-    height: 5vh;
-    padding: 10px;
+    height: 10vh;
+    padding: 20px;
     background-color: rgba(245, 245, 245, 0.103);
     z-index: 1;
 }
@@ -19,11 +39,11 @@ nav a{
     text-decoration: none;
     color: black;
     margin-right: 50px;
-    transition: 1s;
+    /* transition: 1s; */
 }
 
 nav a:first-child{
-    color: red;
+    color: navy;
     float:left;
 }
 
@@ -31,6 +51,7 @@ nav a:first-child{
     position: relative;
     height: 60vh;
     overflow: hidden;
+    margin-bottom: 100px;
 }
 
 .home img{
@@ -75,4 +96,63 @@ nav a:first-child{
     font-size: 20px;
     color: grey;
     letter-spacing: 1px;
+}
+
+.bio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60vh;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.bio img{
+    height: 90%;
+    margin-left: 150px;
+    margin-right: 150px;
+    -webkit-box-shadow: 5px 5px 23px 0px rgba(0,0,0,0.5); 
+    box-shadow: 5px 5px 23px 0px rgba(0,0,0,0.5);
+}
+
+.bio-container{
+    width: 50%;
+    text-align: center;
+    margin-right: 150px;
+}
+
+.introduction{
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.gallery{
+    margin-left: 150px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.gallery img{
+    height: 80%;
+}
+
+.contact{
+    position:relative;
+    margin-left: 150px;
+    height: 60vh;
+}
+
+.contact img{
+    position: absolute;
+    left: -150px;
+    z-index: -1;
+    opacity: 0.5;
+    height: 100%;
+}
+
+footer{
+    text-align: center;
+    font-size: 10px;
 }
