@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(245, 245, 245);
+    font-family: "Helvetica Now Display DW",sans-serif;
+}
+
+nav{
+    position: fixed;
+    height: 5vh;
+    padding: 10px;
+    background-color: rgba(245, 245, 245, 0.103);
+    z-index: 1;
+}
+
+nav a{
+    float: right;
+    text-decoration: none;
+    color: black;
+    margin-right: 50px;
+    transition: 1s;
+}
+
+nav a:first-child{
+    color: red;
+    float:left;
+}
+
+.home{
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.home img{
+    float: right;
+    max-height: 100%;
+    /* max-width: 100%; */
+}
+
+.extend{
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    color: rgba(255, 255, 255, 0.527);
+    font-size: 8rem;
+    font-weight: 600;
+    text-shadow: -5px 2px 15px #ffffff;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.info-container{
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    left: 0;
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+
+.name{
+    font-size: 17px;
+    color: grey;
+    letter-spacing: 5px;
+}
+
+.job{
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.intro{
+    font-size: 20px;
+    color: grey;
+    letter-spacing: 1px;
+}
